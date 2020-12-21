@@ -1,0 +1,21 @@
+Hapke Unmixing Routine
+
+Matlab scripts and functions required:
+	hapkeAlbedoNewHlsqcurvefit.m
+	hapke_reflectanceSimple.m OR
+	hapke_reflectanceLegrendeP.m
+
+Data/Inputs required:
+	X = wavelengths used
+	Rc = reflectance spectra values to be converted to SSA
+	wguess = an initialisation value for the optimisation of the SSA/w being calculated
+	
+X and Rc will be vectors, doesn't matter if they're row or column as long as they're the same
+
+Commands to give:
+	wguess = 0.83 (this is just an example value but an initialisation w guess value must be given)
+	Import Data = import the reflectance spectra and wavelength vectors
+	X = wavelength vector (rename the wavelength vector X)
+	Rc = spectrum vector (set Rc to the spectrum to be converted)
+	Ensure the inc and emi values within both the above scripts and functions are correct and the same
+	
